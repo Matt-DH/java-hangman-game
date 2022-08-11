@@ -12,7 +12,7 @@ public class Game implements Visuals {
     // Variables
     private int tries = 7;
     private char[] nameCharArray;
-    private String name;
+    private String name = "";
     private String game;
     private String guess;
     private char[] answerCharArray;
@@ -28,8 +28,6 @@ public class Game implements Visuals {
         for (char c : nameCharArray) {
             name += c;
         }
-
-        System.out.println(name);
 
         answerCharArray = name.replaceAll("[A-Za-z]", "#").toCharArray();
 
@@ -49,9 +47,21 @@ public class Game implements Visuals {
             System.out.print("GUESS:   ");
             guess = sc.next();
 
-            while (name.contains(guess)) {
-                answerCharArray[name.indexOf(guess)] = name.charAt(name.indexOf(guess));
-                nameCharArray[name.indexOf(guess)] = '#';
+            if (name.contains(guess)) {
+                System.out.println();
+                System.out.println("CORRECT!");
+                while (name.contains(guess)) {
+                    answerCharArray[name.indexOf(guess)] = name.charAt(name.indexOf(guess));
+                    nameCharArray[name.indexOf(guess)] = '#';
+                    name = "";
+                    for (char c : nameCharArray) {
+                        name += c;
+                    }
+                }
+            } else {
+                System.out.println();
+                System.out.println("INCORRECT!");
+                tries -= 1;
             }
 
             System.out.println();
