@@ -1,16 +1,16 @@
-leon s kennedy
-ezio auditore da firenze
-alduin
-max payne
-john marston
-pyramid head
-niko bellic
-agent 47
-dogmeat
-kratos
-big daddy
-geralt of rivia
-ellie
-handsome jack
-big boss
-scorpion
+leon s kennedy,Resident Evil
+ezio auditore da firenze,Assassin's Creed
+alduin,Skyrim
+max payne,Max Payne
+john marston,Red Dead
+pyramid head,Silent Hill
+niko bellic,Grand Theft Auto
+agent 47,Hitman
+dogmeat,Fallout
+kratos,God of War
+big daddy,Bioshock
+geralt of rivia,The Witcher
+ellie,The Last of Us
+handsome jack,Borderlands
+big boss,Metal Gear
+scorpion,Mortal Kombat

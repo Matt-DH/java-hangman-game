@@ -12,9 +12,11 @@ public class Words {
     // Variables
     FileReader file;
     BufferedReader bufferedReader;
-    List<String> words;
+    List<String> lines;
+    String[] lineArray;
+    ArrayList<String[]> namesAndGames = new ArrayList<>();
 
-    public List<String> setDifficulty(int i) {
+    public ArrayList<String[]> setDifficulty(int i) {
         try {
             switch (i) {
                 case 0:
@@ -28,11 +30,15 @@ public class Words {
                     break;
             }
             bufferedReader = new BufferedReader(file);
-            words = bufferedReader.lines().toList();
+            lines = bufferedReader.lines().toList();
+            for (String line : lines) {
+                lineArray = line.split(",");
+                namesAndGames.add(lineArray);
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return words;
+        return namesAndGames;
     }
 
 }

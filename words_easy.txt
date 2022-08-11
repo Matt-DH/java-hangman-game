@@ -1,14 +1,15 @@
-mario
-luigi
-doomguy
-zelda
-donkey kong
-steve
-spyro
-rayman
-pikachu
-pacman
-sonic the hedgehog
-crash bandicoot
-megaman
-kirby
+mario,Mario
+luigi,Mario
+doomguy,DOOM
+zelda,The Legend of Zelda
+link,The Legend of Zelda
+donkey kong,Donkey Kong
+steve,Minecraft
+spyro,Spyro
+rayman,Rayman
+pikachu,Pokémon
+pacman,Pacman
+sonic the hedgehog,Sonic
+crash bandicoot,Crash Bandicoot
+megaman,Megaman
+kirby,Kirby

@@ -1,17 +1,16 @@
-master chief
-solid snake
-tom nook
-lara croft
-link
-nathan drake
-gordon freeman
-cloud
-samus aran
-glados
-commander shepard
-ratchet and clank
-jak and daxter
-duke nukem
-tracer
-banjo and kazooie
-cortana
+master chief,Halo
+solid snake,Metal Gear
+tom nook,Animal Crossing
+lara croft,Tomb Raider
+nathan drake,Nathan Drake
+gordon freeman,Half Life
+cloud,Final Fantasy
+samus aran,Samus
+glados,Portal
+commander shepard,Mass Effect
+ratchet and clank,Ratchet and Clank
+jak and daxter,Jak
+duke nukem,Duke Nukem
+tracer,Overwatch
+banjo and kazooie,Banjo
+cortana,Halo

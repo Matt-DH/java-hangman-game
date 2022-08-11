@@ -2,6 +2,7 @@ package com.mattdh;
 
 import jdk.swing.interop.SwingInterOpUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Main {
     // Objects
     static Scanner sc = new Scanner(System.in);
     static Words words = new Words();
+    static Game game = new Game();
 
     // Variables
     static String inputDifficulty;
@@ -28,16 +30,14 @@ public class Main {
         System.out.println("HARD");
         
         while (difficultySet == false) {
-            for (String s : chooseDifficulty()) {
-                System.out.println(s);
-            }
+            game.setupWord(chooseDifficulty());
         }
         
     }
     
-    private static List<String> chooseDifficulty() {
-        
-        List<String> returnList = null;
+    private static ArrayList<String[]> chooseDifficulty() {
+
+        ArrayList<String[]> returnList = null;
         
         try {
             inputDifficulty = sc.next();
