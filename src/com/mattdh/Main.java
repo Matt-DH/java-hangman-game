@@ -32,7 +32,9 @@ public class Main {
         while (difficultySet == false) {
             game.setupWord(chooseDifficulty());
         }
-        
+
+        game.startGame();
+
     }
     
     private static ArrayList<String[]> chooseDifficulty() {
@@ -41,7 +43,7 @@ public class Main {
         
         try {
             inputDifficulty = sc.next();
-            switch (inputDifficulty.toLowerCase(Locale.ROOT)) {
+            switch (inputDifficulty.toLowerCase()) {
                 case "easy":
                     returnList = words.setDifficulty(0);
                     difficultySet = true;

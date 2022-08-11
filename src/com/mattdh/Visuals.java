@@ -1,4 +1,4 @@
 package com.mattdh;
 
-public class Output {
+public class Visuals {
 }
