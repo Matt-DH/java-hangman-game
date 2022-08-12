@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
 
@@ -28,9 +29,13 @@ public class Main {
         System.out.println("EASY");
         System.out.println("MEDIUM");
         System.out.println("HARD");
+        System.out.println("RANDOM");
         
         while (difficultySet == false) {
-            game.setupWord(chooseDifficulty());
+            ArrayList<String[]> arrayList = chooseDifficulty();
+            if (!(arrayList == null)) {
+                game.setupWord(arrayList);
+            }
         }
 
         game.startGame();
@@ -54,6 +59,10 @@ public class Main {
                     break;
                 case "hard":
                     returnList = words.setDifficulty(2);
+                    difficultySet = true;
+                    break;
+                case "random":
+                    returnList = words.setDifficulty(ThreadLocalRandom.current().nextInt(0, 3));
                     difficultySet = true;
                     break;
                 default:

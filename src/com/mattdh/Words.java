@@ -21,12 +21,17 @@ public class Words {
             switch (i) {
                 case 0:
                     file = new FileReader("words_easy.txt");
+                    System.out.println();
+                    System.out.println("DIFFICULTY: EASY");
+                    System.out.println();
                     break;
                 case 1:
                     file = new FileReader("words_medium.txt");
+                    System.out.println("DIFFICULTY: MEDIUM");
                     break;
                 case 2:
                     file = new FileReader("words_hard.txt");
+                    System.out.println("DIFFICULTY: HARD");
                     break;
             }
             bufferedReader = new BufferedReader(file);
